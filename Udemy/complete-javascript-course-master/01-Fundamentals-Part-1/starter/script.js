@@ -60,7 +60,7 @@ var nome = 'felippy'
 console.log (nome) // deu ERRO por algum motivo
 */
 
-
+/*
 //IF ELSE
 const age = 15
 if (age >= 18) {
@@ -79,4 +79,33 @@ if (birthYear <= 2000) {
     century = 21
 }
 console.log(century)
+*/
+
+//convertion
+
+//string to number
+const inputYear = '1991'
+console.log(Number(inputYear/*number*/), inputYear/*string*/)
+console.log(inputYear + 18)//string
+console.log(Number(inputYear) + 18)//number
+
+console.log(Number('Jonas'))
+console.log(typeof NaN)
+
+//number to string
+console.log(String(23/*string*/), 23/*number*/)
+
+//something to boolean
+console.log(Boolean(0))
+console.log(Boolean(undefined))
+console.log(Boolean('jonas'))
+console.log(Boolean({}))
+console.log(Boolean(''))
+
+const money = 100
+if(money) {
+    console.log("don't spend it all")
+} else {
+    console.log("you should get a job")
+}
 
