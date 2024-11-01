@@ -81,11 +81,12 @@ if (birthYear <= 2000) {
 console.log(century)
 */
 
+/*
 //convertion
-
 //string to number
 const inputYear = '1991'
-console.log(Number(inputYear/*number*/), inputYear/*string*/)
+//                  number       string     
+console.log(Number(inputYear), inputYear)
 console.log(inputYear + 18)//string
 console.log(Number(inputYear) + 18)//number
 
@@ -93,7 +94,8 @@ console.log(Number('Jonas'))
 console.log(typeof NaN)
 
 //number to string
-console.log(String(23/*string*/), 23/*number*/)
+//              string number
+console.log(String(23), 23)
 
 //something to boolean
 console.log(Boolean(0))
@@ -108,4 +110,60 @@ if(money) {
 } else {
     console.log("you should get a job")
 }
+*/
+/*
+//Logica Operators
+const hasDrivesLicence = true
+const hasGoodVision = false
 
+console.log(hasDrivesLicence && hasGoodVision)
+console.log(hasDrivesLicence || hasGoodVision)
+console.log(!hasDrivesLicence)
+
+if(hasDrivesLicence && hasGoodVision) {
+    console.log('sarah is able to drive')
+} else {
+console.log('someone else shuold to drive...')
+}
+*/
+
+/*
+//switch
+const day = 'wednesday'
+
+switch(day) {
+    case 'monday':
+        console.log('plan couse structure')
+        console.log('go to coding meetup')
+        break
+    case 'tuesday':
+        console.log('prepare theory videos');
+        break
+    case 'wednesday':
+        break
+    case 'thusday':
+        console.log('write code examples')
+        break
+    case 'friday':
+        console.log('Record videos')
+        break
+    case 'saturday':
+        break
+    case 'sunday':
+        console.log('enjoy the weekend')
+        break
+    default:
+        console.log('not valible day')
+}
+*/
+
+//IF ELSE simplify
+const age = 23
+age >= 18 ? console.log('I like to drink wine') : console.log('I like to drink water')
+
+//more simplify
+const drink = age >= 18 ? 'wine' : 'water'
+console.log(drink)
+
+// we can use
+console.log(`I like to drink ${age >= 18 ? 'wine' : 'water'}`)

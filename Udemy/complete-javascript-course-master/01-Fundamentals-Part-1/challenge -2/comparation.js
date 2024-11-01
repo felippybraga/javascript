@@ -1,26 +1,18 @@
-let markMass = 78
-let MarkHieght = 1.69
+const massMark = 78;
+const heightMark = 1.69;
+const massJohn = 92;
+const heightJohn = 1.95;
 
-let johnMass = 92
-let johnHeight = 1.95
+const BMIMark = massMark / (heightMark * heightMark);
+const BMIJohn = massJohn / (heightJohn * heightJohn);
+console.log(BMIMark, BMIJohn);
 
-let BMIMark = markMass / (MarkHieght * MarkHieght)
-let BMIJohn = johnMass / (johnHeight * johnHeight)
+/* Write your code below. Good luck! 🙂 */
 
-console.log ('in the exercice 1:')
-console.log ('the BMI of Mark is ' + BMIMark)
-console.log ('the BMI of John is ' + BMIJohn)
-
-//exersice 2
-let mark_mass = 95
-let Mark_hieght = 1.88
-
-let john_mass = 85
-let john_hieght = 1.76
-
-let BMI_mark = markMass / (MarkHieght * MarkHieght)
-let BMI_john = johnMass / (johnHeight * johnHeight)
-
-console.log ('in the exercice 2:')
-console.log ('the BMI of Mark is ' + BMI_mark)
-console.log ('the BMI of John is ' + BMI_john)
+if(BMIMark > BMIJohn) {
+    console.log('Mark is higher than John')
+    console.log(`Mark's BMI ${BMIMark} is higher than John's ${BMIJohn}`)
+} else {
+    console.log('John is higher than Mark')
+    console.log(`John's BMI ${BMIJohn} is higher than Mark's ${BMIMark}`)
+}
