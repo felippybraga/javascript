@@ -6,7 +6,7 @@ const passTest = true
 if (passTest) hasDriversLicence = true
 if(hasDriversLicence) console.log('I can drive :D')
 */
-
+/*
 //function
 function nome() {
     console.log("I'm Felippy")
@@ -71,3 +71,82 @@ function fruitProcessor (apples, oranges) {
 }
 
 console.log (fruitProcessor(2, 3))
+*/
+
+/*
+//Arrays
+const friends = ['Michel', 'steven', 'peter']
+console.log (friends)
+
+console.log(friends.length)
+console.log(friends [friends.length - 3])
+
+friends[2] = 'jay'
+console.log (friends)
+
+const fistName = 'felippy'
+const felippy = [fistName, 'benicio', 2024 - 2005, 'programmer', friends]
+console.log(felippy)
+*/
+
+/*
+//arrays operation
+
+//add elements
+const friends = ['Michel', 'steven', 'peter']
+console.log (friends)
+
+friends.push('jay')
+console.log (friends)
+
+friends.unshift('john')
+console.log (friends)
+
+//remove elements
+
+friends.pop()
+friends.pop()
+console.log (friends)
+
+friends.shift()
+const shift = friends.shift()
+console.log (shift)
+console.log (friends)
+
+console.log(friends.indexOf('steven'))// this is 0 because it's the single of array, so is 0
+console.log(friends.indexOf('bob'))
+
+
+friends.push(23)
+console.log(friends.includes('steven'))
+console.log(friends.includes('bob'))
+console.log(friends.includes(23))
+
+friends.push('peter')
+if (friends.includes('peter')) {
+    console.log('you have a friends called peter')
+}
+*/
+
+//object
+
+//object struct
+const felippy = {
+    firstName: 'Felippy',
+    lastName: 'benicio',
+    age: 2024 - 2005,
+    job: 'developper',
+    friends: ['steven', 'michel', 'john']
+}
+console.log (felippy)
+
+//there are 2 ways
+console.log (felippy.firstName)
+console.log (felippy['firstName'])
+
+const nameKey = 'Name'
+console.log(felippy['first' + nameKey])
+console.log(felippy['last' + nameKey])
+
+const interestedIn = prompt('what do you wanna konw about Felippy? choose between fistName, LastNmae, age, job, and friends')
+console.log(felippy[interestedIn])
